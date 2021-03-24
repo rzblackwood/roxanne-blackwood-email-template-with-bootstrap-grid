@@ -1,0 +1,21 @@
+html {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+    height: 100vh;
+}
+.col-md-2 {
+    height: 100vh;
+}
+.col-md-4 {
+    height: 100vh;
+}
+.col-md-6 {
+    height: 100vh;
+}
