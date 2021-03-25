@@ -10,9 +10,11 @@ body {
     padding: 0px;
     height: 100vh;
 }
-.col-md-2 {
+/*Leftmost column*/
+.sidebar {
     height: 100vh;
 }
+/*Middle column*/
 .col-md-4 {
     height: 100vh;
 }
@@ -21,4 +23,9 @@ body {
 }
 .right-align-time {
     text-align: right;
+}
+#highlighted-email-box {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 0px;
 }

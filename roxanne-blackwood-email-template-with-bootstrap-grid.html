@@ -20,15 +20,24 @@
             <div class="col-md-2 p-3 mb-2 bg-dark text-white sidebar">
                 <i class="fas fa-user-circle fa-5x"></i>
                 <p class="text-light">Welcome back Roxanne!</p>
-                <button type="button" class="btn btn-info btn-lg">Compose</button>
-                <ul>
-                    <li><strong>Inbox (1)</strong></li>
-                    <li>Tagged</li>
-                    <li>Important</li>
-                    <li>Sent Mail</li>
-                    <li>Drafts</li>
-                    <li>Trash</li>
-                </ul>
+                <!--Div to center compose button-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                    <!--Compose button-->
+                    <button type="button" class="btn btn-info btn-lg">Compose</button>
+                        </div>
+                    </div>
+                </div>  
+                    <!--List of email menu items-->
+                    <ul>
+                        <li><strong>Inbox (1)</strong></li>
+                        <li>Tagged</li>
+                        <li>Important</li>
+                        <li>Sent Mail</li>
+                        <li>Drafts</li>
+                        <li>Trash</li>
+                    </ul>
             </div>
             <!--Middle Column-->
             <div class="col-md-4 p-3 mb-2 bg-secondary text-white list">
@@ -57,19 +66,21 @@
                             </tbody>
                         </table>
                         <!--Email Middle-->
-                        <table class="table table-borderless">
-                            <thead>
-                                <tr>
-                                    <td><strong>Oprah Quotes</strong></td>
-                                    <td class="right-align-time">12:00am</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>You can have it all. Just not all at once.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div id="highlighted-email-box">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Oprah Quotes</strong></td>
+                                        <td class="right-align-time">12:00am</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>You can have it all. Just not all at once.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <!--Email Last-->
                         <table class="table table-borderless">
                             <thead>
@@ -86,7 +97,7 @@
                         </table>
                     </div>
             </div>
-            <!--Rightmost Column-->
+            <!--Rightmost Column Email Body-->
             <div class="col-md-6 p-3 mb-2 bg-light text-white email">
                 <p class="text-secondary">Email body placeholder</p>
             </div>
