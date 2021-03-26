@@ -6,6 +6,17 @@
     color: #f2f2f2;
     background-color: #404040;
 }
+    /*Styles inside of leftmost column*/
+    #welcome-back {
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    #welcome-back-text {
+        padding: 15px;
+    }
 #midcol {
     height: 100vh;
     background-color: #cccccc;
