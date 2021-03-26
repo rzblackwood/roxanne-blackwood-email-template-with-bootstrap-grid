@@ -1,43 +1,16 @@
-html {
-    overflow: hidden;
-    height: 100vh;
-    margin: 0;
-    padding: 0px;
-}
-body {
-    overflow: hidden;
-    margin: 0;
-    padding: 0px;
+#the-container {
     height: 100vh;
 }
-/*LEFTMOST COLUMN*/
-.sidebar {
+#leftcol {
     height: 100vh;
+    color: #f2f2f2;
+    background-color: #404040;
 }
-.compose-button {
-    margin: 30px;
-}
-/*User circle and text spacing*/
-.user-circle {
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: space-between;
-}
-/*MIDDLE COLUMN*/
-.col-md-4 {
+#midcol {
     height: 100vh;
+    background-color: #cccccc;
 }
-.right-align-time {
-    text-align: right;
-}
-#highlighted-email-box {
-    background-color: #f8f9fa;
-    padding: 10px;
-    margin: 0px;
-}
-/*RIGHTMOST COLUMN*/
-.col-md-6 {
+#rightcol {
     height: 100vh;
+    background-color: #ffffff;
 }
