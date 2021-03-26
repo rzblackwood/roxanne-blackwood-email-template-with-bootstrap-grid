@@ -53,12 +53,14 @@
             <!--Middle Column-->
             <div class="col-md-4 p-3 mb-2 bg-secondary text-white list">
                     <!--Search Bar via Bootstrap Input Group and Font Awesome Icon-->
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search fa-2x"></i>
-                            </span>
+                    <div class="container">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search fa-2x"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search for emails" aria-describedby="basic-addon1">
                         </div>
-                        <input type="text" class="form-control" placeholder="Search for emails" aria-describedby="basic-addon1">
                     </div>
                     <!--List of Unread Emails: Each email section consists of a table-->
                     <div class="container">
@@ -110,7 +112,26 @@
             </div>
             <!--Rightmost Column Email Body-->
             <div class="col-md-6 p-3 mb-2 bg-light text-white email">
-                <p class="text-secondary">Email body placeholder</p>
+                <div class="container">
+                    <!--Email to and from-->
+                    <div>
+                        <p class="text-secondary">To: roxanne@rzbsoftwaresolutions.com</p>
+                        <p class="text-secondary">From: oprah@oprah.com</p>
+                    </div>
+                    <!--Email headline-->
+                    <div>
+                        <h3 class="text-secondary">Oprah Daily Quotes</h3>
+                    </div>
+                    <!--Email body-->
+                    <div>
+                        <p class="text-secondary">"Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down."</p>
+                        <p class="text-secondary">"My idea of heaven is a great big baked potato and someone to share it with."</p>
+                        <p class="text-secondary">"You can have it all. Just not all at once."</p>
+                        <p class="text-secondary">"Do what you have to do until you can do what you want to do."</p>
+                        <p class="text-secondary">"Pray as if it's up to God, work as if it's up to you."</p>
+                        <p class="text-secondary">"I don't believe in failure. Failure is just information and an opportunity to change your course."</p>
+                    </div>
+                </div>
             </div>
         </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->

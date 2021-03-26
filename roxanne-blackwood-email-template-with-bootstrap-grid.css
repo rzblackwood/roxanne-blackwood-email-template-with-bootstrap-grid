@@ -10,20 +10,22 @@ body {
     padding: 0px;
     height: 100vh;
 }
-/*Leftmost column*/
+/*LEFTMOST COLUMN*/
 .sidebar {
     height: 100vh;
 }
 .compose-button {
     margin: 30px;
 }
+/*User circle and text spacing*/
 .user-circle {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    align-content: space-between;
 }
-/*Middle column*/
+/*MIDDLE COLUMN*/
 .col-md-4 {
     height: 100vh;
 }
@@ -35,7 +37,7 @@ body {
     padding: 10px;
     margin: 0px;
 }
-/*Rightmost Column*/
+/*RIGHTMOST COLUMN*/
 .col-md-6 {
     height: 100vh;
 }
