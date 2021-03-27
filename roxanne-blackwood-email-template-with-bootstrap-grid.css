@@ -54,7 +54,23 @@
     .all-emails {
         margin: 30px;
     }
+    #highlighted-email {
+        background-color: #f2f2f2;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px -1px gray;
+    }
 #rightcol {
     height: 100vh;
     background-color: #ffffff;
 }
+    /*Styles inside of right column*/
+    #email-body {
+
+    }
+    #email-fields {
+
+    }
+    #title-email-icons {
+
+    }
