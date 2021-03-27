@@ -26,23 +26,79 @@
             <button type="button" class="btn btn-secondary" id="compose-button">COMPOSE</button>
             <div id="email-menu-list">
                 <ul>
-                    <li>Inbox (1)</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li id="inbox-1">Inbox (1)</li>
+                    <li>Tagged</li>
+                    <li>Important</li>
+                    <li>Sent Mail</li>
+                    <li>Drafts</li>
+                    <li>Trash</li>
                 </ul>
             </div>
         </div>
         <!--Middle Column Area-->
         <div class="col-md-4" id="midcol"> 
+            <!--Search Input-->
+            <div class="input-group mb-3" id="email-input">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search fa-2x"></i></span>
+                <input type="text" class="form-control" placeholder="Search for emails" aria-label="Emails" aria-describedby="basic-addon1">
+              </div>
+            <!--Email Preview 1-->
+            <div class="all-emails">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <td id="email-title">Linkedin</td>
+                            <td id="time-stamp">12:55am</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="email-text">You have a new connection request from Brené Brown.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Email Preview 2-->
+            <div class="all-emails" id="highlighted-email">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <td id="email-title">Daily Oprah Winfrey Quotes</td>
+                            <td id="time-stamp">March 27, 2021</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="email-text">You can have it all. Just not all at once.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Email Preview 3-->
+            <div class="all-emails">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <td id="email-title">RZB Software Solutions</td>
+                            <td id="time-stamp">2:00pm</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="email-text">Crushing it. Winning. You are a God Damned Cheetah! Duh!</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
         </div>
         <!--Rightmost Column Area-->
         <div class="col-md-6" id="rightcol"> 
+            <div id="email-body">
+
+            </div>
         </div>
-    </div>
-</div>
+    </div><!--Closing Div Row-->
+</div><!--Closing Div Container-->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

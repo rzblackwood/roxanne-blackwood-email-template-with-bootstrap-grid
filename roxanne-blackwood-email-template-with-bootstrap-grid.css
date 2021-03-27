@@ -10,12 +10,13 @@
 }
     /*Styles inside of leftmost column*/
     #welcome-back {
-        margin: 15px;
+        margin-top: 30px;
+        margin-left: 30px;
         padding: 15px;
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: center;
+
     }
     #welcome-back-text {
         padding: 15px;
@@ -23,16 +24,36 @@
     #compose-button {
         margin-left: 40px;
         margin-right: 40px;
+        margin-bottom: 30px;
         padding: 15px;
+        font-weight: bold;
+    }
+    #inbox-1 {
+        font-weight: bold;
     }
     #email-menu-list {
     margin: 15px;
     padding: 15px;
+    line-height: 35px;
     }
 #midcol {
     height: 100vh;
     background-color: #cccccc;
 }
+    /*Styles inside of middle column*/
+    #email-input {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    #email-title {
+        font-weight: bold;
+    }
+    #time-stamp {
+        float: right;
+    }
+    .all-emails {
+        margin: 30px;
+    }
 #rightcol {
     height: 100vh;
     background-color: #ffffff;
