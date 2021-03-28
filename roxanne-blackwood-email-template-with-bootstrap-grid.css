@@ -65,12 +65,36 @@
     background-color: #ffffff;
 }
     /*Styles inside of right column*/
-    #email-body {
-
+    #email-message {
+        margin: 50px;
     }
     #email-fields {
-
+        font-size: 12px;
+        line-height: .5em;
+        margin-bottom: 30px;
     }
-    #title-email-icons {
-
+    #email-title-line {
+        font-weight: bolder;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    #cute-icon {
+        float: right;
+        font-size: small;
+        letter-spacing: 10px;
+    }
+    #reply-card {
+        margin-top: 60px;
+        height: 30em;
+        padding: 20px;
+    }
+    #paper-clip {
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+    }
+    #reply-button {
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-end;
     }
