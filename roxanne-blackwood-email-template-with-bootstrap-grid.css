@@ -1,97 +1,71 @@
-#the-container {
+
+#left-column {
+    background-color: black;
+    color: white;
     height: 100vh;
 }
-#leftcol {
-    height: 100vh;
-    color: #f2f2f2;
-    background-color: #404040;
+#leftcol-contents {
+    margin: 30px;
+}
+#welcome-back-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#greeting {
+    margin-left: 10px;
+}
+#compose-button {
+    display: flex;
+    justify-content: center;
+}
+#email-types {
     display: flex;
     flex-direction: column;
+    justify-content: start;
 }
-    /*Styles inside of leftmost column*/
-    #welcome-back {
-        margin-top: 30px;
-        margin-left: 30px;
-        padding: 15px;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-
-    }
-    #welcome-back-text {
-        padding: 15px;
-    }
-    #compose-button {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 30px;
-        padding: 15px;
-        font-weight: bold;
-    }
-    #inbox-1 {
-        font-weight: bold;
-    }
-    #email-menu-list {
-    margin: 15px;
-    padding: 15px;
-    line-height: 35px;
-    }
-#midcol {
+#middle-column {
+    background-color: grey;
+    color: black;
     height: 100vh;
-    background-color: #cccccc;
 }
-    /*Styles inside of middle column*/
-    #email-input {
-        margin-top: 30px;
-        padding: 20px;
-    }
-    #email-title {
-        font-weight: bold;
-    }
-    #time-stamp {
-        float: right;
-    }
-    .all-emails {
-        margin: 30px;
-    }
-    #highlighted-email {
-        background-color: #f2f2f2;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 4px 4px 5px -1px gray;
-    }
-#rightcol {
+#midcol-content {
+    margin: 30px;
+}
+#email-blurb {
+    display: flex;
+    justify-content: space-between;
+}
+#bold-email {
+    font-weight:bold;
+}
+#highlighted-email {
+    background-color: #f2f2f2;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px -1px #404040;
+    margin-bottom: 10px;
+}
+#rightmost-column {
+    background-color: white;
+    color: black;
     height: 100vh;
-    background-color: #ffffff;
 }
-    /*Styles inside of right column*/
-    #email-message {
-        margin: 50px;
-    }
-    #email-fields {
-        font-size: 12px;
-        line-height: .5em;
-        margin-bottom: 30px;
-    }
-    #email-title-line {
-        font-weight: bolder;
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    #cute-icon {
-        float: right;
-        font-size: small;
-        letter-spacing: 10px;
-    }
-    #reply-card {
-        margin-top: 60px;
-        height: 30em;
-        padding: 20px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    #reply-button {
-        width: fit-content;
-    }
+#rightcol-content {
+    margin: 30px;
+}
+#to-from {
+    line-height: .5em;
+}
+#email-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#reply-button {
+    width: fit-content;
+}
+#reply-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,123 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
+    <title>Document</title>
+    <!--Bootstrap Stylesheet-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!--CSS-->
+    <!--Cascading-->
     <link rel="stylesheet" href="roxanne-blackwood-email-template-with-bootstrap-grid.css">
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/d8fc45bb82.js" crossorigin="anonymous"></script>
-    <title>Email Template</title>
 </head>
 <body>
-<div class="container-fluid" id="the-container">
-    <!--Row-->
-    <div class="row">
-        <!--Leftmost Column Area-->
-        <div class="col-md-2" id="leftcol">
-            <div id="welcome-back">
-                <i class="fas fa-user-circle fa-3x"></i>
-                <p id="welcome-back-text">Welcome Back!</p>
-            </div>
-            <button type="button" class="btn btn-secondary" id="compose-button">COMPOSE</button>
-            <div id="email-menu-list">
-                <ul>
-                    <li id="inbox-1">Inbox (1)</li>
-                    <li>Tagged</li>
-                    <li>Important</li>
-                    <li>Sent Mail</li>
-                    <li>Drafts</li>
-                    <li>Trash</li>
-                </ul>
-            </div>
-        </div>
-        <!--Middle Column Area-->
-        <div class="col-md-4" id="midcol"> 
-            <!--Search Input-->
-            <div class="input-group mb-3" id="email-input">
+    <div class="container-fluid">
+        <div class="row">
+          <!--Left Column-->
+           <div class="col-2" id="left-column">
+            <div id="leftcol-contents">
+            <p id="welcome-back-line"><i class="fas fa-user-circle fa-3x"></i><em id="greeting">Welcome Back!</em></p>
+            <p id="compose-button"><button type="button" class="btn btn-secondary">COMPOSE</button></p>
+            <ul id="email-types">
+              <li>Inbox (1)</li>
+              <li>Tagged</li>
+              <li>Important</li>
+              <li>Sent Mail</li>
+              <li>Drafts</li>
+              <li>Trash</li>
+           </ul>
+           </div>
+          </div><!--Closing Div for Left Column-->
+          <!--Middle Column-->
+          <div class="col-4" id="middle-column">
+            <div id="midcol-content">
+              <div class="input-group mb-3" id="email-input">
                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-search fa-2x"></i></span>
                 <input type="text" class="form-control" placeholder="Search for emails" aria-label="Emails" aria-describedby="basic-addon1">
               </div>
-            <!--Email Preview 1-->
-            <div class="all-emails">
-                <table class="table table-borderless">
-                    <thead>
-                        <tr>
-                            <td id="email-title">Linkedin</td>
-                            <td id="time-stamp">12:55am</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="email-text">You have a new connection request from Brené Brown.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <p id="email-blurb">
+              <span id="bold-email">LinkedIn</span>
+              <span>2:45pm</span></p>
+            <p>You have a new connection request.</p>
+             <div id="highlighted-email">
+             <p id="email-blurb">
+               <span id="bold-email">Prowess</span>
+               <span>Mar 27, 2021</span></p>
+             <p>Kristina mentioned you in a comment.</p>
+             </div>
+            <p id="email-blurb">
+              <span id="bold-email">Hadi Partovi</span>
+              <span>Mar 26, 2021</span></p>
+            <p>Welcome to Code.Org!</p>
             </div>
-            <!--Email Preview 2-->
-            <div class="all-emails" id="highlighted-email">
-                <table class="table table-borderless">
-                    <thead>
-                        <tr>
-                            <td id="email-title">Oprah Winfrey Daily Quotes</td>
-                            <td id="time-stamp">March 27, 2021</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="email-text">You can have it all. Just not all at once.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!--Email Preview 3-->
-            <div class="all-emails">
-                <table class="table table-borderless">
-                    <thead>
-                        <tr>
-                            <td id="email-title">RZB Software Solutions</td>
-                            <td id="time-stamp">2:00pm</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="email-text">Crushing it. Winning. You are a God Damned Cheetah! Duh!</td>
-                        </tr>
-                    </tbody>
-                </table> 
-            </div>
-        </div>
-        <!--Rightmost Column Area-->
-        <div class="col-md-6" id="rightcol"> 
-            <div id="email-message">
-                <div id="email-fields">
-                    <p id="to-from">To: roxanne@rzbsoftwaresolutions.com</p>
-                    <p id="to-from">From: re-reply@oprah.com</p>
-                </div>
-                <div id="email-title-line">
-                    <p>Oprah Winfrey Daily Quotes
-                        <i class="fa fa-trash" aria-hidden="true" id="cute-icon"></i>
-                        <i class="fa fa-reply" id="cute-icon"></i>
-                        <i class="fa fa-ellipsis-h" id="cute-icon"></i></p>
-                </div>
-                <div id="body-message">
-                    <p>"We make a living by what we get. We make a life by what we give." —Winston Churchill, British statesman</p>
-                    <p>"Success is a journey, not a destination. The doing is often more important than the outcome." — Arthur Ashe, tennis champion</p>
-                    <p>"Everybody tells the truth with something." -Glennon Doyle</p>
-                    <p>"I would rather flirt with failure than never dance with my joy." -Wes Moore</p>
-                </div>
-                <div class="card" id="reply-card">
-                <i class="fa fa-paperclip fa-2x" aria-hidden="true"></i>
-                 <button type="button" class="btn btn-outline-secondary col-md-4" id="reply-button">REPLY</button>
-                </div>
-        </div>
-    </div><!--Closing Div Row-->
-</div><!--Closing Div Container-->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+          </div><!--Closing Div for Middle Column-->
+          <!--Rightmost Column-->
+          <div class="col-6" id="rightmost-column">
+            <div id="rightcol-content">
+             <p id="to-from">To: roxanne@rzbsoftware.com</p>
+             <p id="to-from">From: no-reply@circle.so</p>
+             <h5 id="email-title">Kristina mentioned you in a comment on Prowess:</h5>
+             <p>Hey! I saw your comment in the Prowess community. We should chat sometime, I'd love to compare notes on our experiences as newbies!</p>
+             <p>BTW, another thing you can do is find a problem that you see in the world and create/code your own passion project. Show that you've kept current and green with  your GitHub repositories. Share content and post those shared on LinkedIn too. The 100 days of code is a very good start to showing that drive. If you make it through all 100 days that already says lots about your determination.</p>
+             <form>
+               <div class="form-group">
+                 <label for="exampleFormControlTextarea1"></label>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+               </div> 
+             </form>
+             <p id="reply-icons"><span><i class="fa fa-paperclip fa-2x" aria-hidden="true"></i></span><span><button type="button" class="btn btn-outline-secondary col-md-4" id="reply-button">REPLY</button></span></p>
+           </div>
+          </div><!--Closing Div for Rightmost Column-->
+        </div><!--Closing Div for Row-->
+      </div><!--Closing Div for Container-->
 </body>
 </html>
