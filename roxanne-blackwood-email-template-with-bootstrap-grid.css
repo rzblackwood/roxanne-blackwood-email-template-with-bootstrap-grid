@@ -24,6 +24,9 @@
     flex-direction: column;
     justify-content: start;
 }
+#inbox-one {
+    font-weight: bold;
+}
 #middle-column {
     background-color: grey;
     color: black;
