@@ -7,22 +7,17 @@
 #leftcol-contents {
     margin: 30px;
 }
-#welcome-back-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #greeting {
     margin-left: 10px;
 }
 #compose-button {
-    display: flex;
-    justify-content: center;
+    margin: 30px;
 }
-#email-types {
+#top-left-section {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 }
 #inbox-one {
     font-weight: bold;
